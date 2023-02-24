@@ -2,6 +2,7 @@
   <div>
     <header>
       <nav>
+        <NuxtLink to="/">Open Space</NuxtLink>
         <ul>
           <li>
             <NuxtLink to="/">Home</NuxtLink>
@@ -15,6 +16,8 @@
         </ul>
       </nav>
     </header>
+
+    <!-- ouput the page content -->
     <div>
       <slot />
     </div>
