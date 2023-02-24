@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header class="shadow-sm bg-white">
       <nav>
         <NuxtLink to="/">Open Space Merch</NuxtLink>
       </nav>
