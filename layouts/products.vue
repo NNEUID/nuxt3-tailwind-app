@@ -1,18 +1,18 @@
 <template>
   <div>
     <header class="shadow-sm bg-white">
-      <nav>
-        <NuxtLink to="/">Open Space Merch</NuxtLink>
+      <nav class="container mx-auto p-4">
+        <NuxtLink to="/" class="font-bold">Open Space Merch</NuxtLink>
       </nav>
     </header>
 
     <!-- ouput the page content -->
-    <div>
+    <div class="container mx-auto p-4">
       <slot />
     </div>
 
-    <footer>
-      <ul>
+    <footer class="container mx-auto p-4 flex justify-between border-t-2">
+      <ul class="flex gap-4">
         <li>
           <NuxtLink to="/">Home</NuxtLink>
         </li>
