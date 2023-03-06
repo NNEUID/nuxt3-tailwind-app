@@ -2,7 +2,8 @@
   <div>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="product in products" :key="product.id">
-        <NuxtLink :to="'/products/' + product.slug">{{ product.title }}</NuxtLink>
+        <img :src="product.image" alt="">
+        <NuxtLink :to="'/products/' + product.id">{{ product.title }}</NuxtLink>
       </div>
     </div>
   </div>
@@ -14,8 +15,7 @@ definePageMeta({
 })
 
 // fetch products
-const result = await useFetch('https://api.storerestapi.com/products')
-const products = result.data._rawValue.data
+const { data: products } = await useFetch('https://fakestoreapi.com/products')
 console.log(products);
 </script>
 
