@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1 class="text-2xl mb-3">{{ product.title }}</h1>
-    <p>{{ product.description }}</p>
+    <p>${{ product.price }}</p>
+    <p>{{ product.id }}</p>
   </div>
 </template>
 
